@@ -1,11 +1,9 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
-// import { RxHamburgerMenu } from 'react-icons/Rx';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
-const navLinks = () =>{
-  
-}
+
 const Navbar = () => {
  // sm:flex-row gap-10 
  // + ((active || 'sm') ? 'block' : 'hidden'
@@ -16,11 +14,13 @@ const Navbar = () => {
 
 
   return (
-    <header className='sm:h-20 text-md text-gray-700 text-lg'>   
-    <button onClick={handleMenu} className='absolute right-0 sm:hidden'>btn</button> 
+    <header className='sm:h-20 text-md text-gray-700 text-lg pb-10'>   
+    <button onClick={handleMenu} className='absolute right-3 top-3 sm:hidden'>
+      <GiHamburgerMenu size={28}/>
+      </button> 
       <nav className={ `pt-10 flex justify-center ` }>
         <ul className={`flex flex-col gap-10 ${active ? '' : 'hidden sm:block'} sm:flex sm:flex-row sm:gap-10  `}>
-          <li onClick={() =>setActive(false)} className='hover:underline underline-offset-4'>
+          <li onClick={() =>setActive(false)} className='hover:underline underline-offset-4 font-normal'>
             <Link href="/">Home</Link>
           </li>
           <li onClick={() => setActive(false)} className='hover:underline underline-offset-4'>
