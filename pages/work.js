@@ -34,7 +34,7 @@ const Work = () => {
           <p className='lg:text-xl text-sm font-normal'>{project.about}</p>
          <div className='lg:text-base text-xs font-normal flex gap-2 flex-wrap'> 
          {project.technologies.map((technology)=>(
-         <div  className='bg-sky-200 rounded-lg w-fit h-fit break-keep p-1'>
+         <div key={technology} className='bg-sky-200 rounded-lg w-fit h-fit break-keep p-1'>
           {technology}
           
          </div>
@@ -58,7 +58,7 @@ const Work = () => {
         onSwiper={(swiper) => console.log(swiper)}
       >
         {project.projectPhoto.map((projectPhoto)=>(
-        <SwiperSlide>
+        <SwiperSlide key={projectPhoto}>
         <Image src={"/"+projectPhoto +".png"} width={720} height={405} />
         </SwiperSlide>
         ))}
