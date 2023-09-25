@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Typewriter from 'typewriter-effect';
 import AboutInfo from '../components/aboutInfo';
-import {BiRightArrow} from 'react-icons/Bi'
+import {FaAngleRight} from 'react-icons/fa';
 
 const About = () => {
   const [activeSection, setActiveSection] = React.useState();
@@ -51,7 +51,7 @@ const About = () => {
       <div className='flex flex-col gap-5 h-screen'>
       {sections.map((section) => (
           <div className='lg:text-3xl text-2xl font-normal' key={section.id}>
-            <div className='flex gap-1 cursor-pointer items-center' onClick={() => toggleSection(section.id)}>{section.label} <BiRightArrow className='mt-1 "' size={28} style={{ alignSelf: 'center'}}/> </div>
+            <div className='flex  cursor-pointer items-center' onClick={() => toggleSection(section.id)}>{section.label} <FaAngleRight className='mt-1 hover:rotate-[360deg] duration-700' size={28} style={{ alignSelf: 'center'}}/> </div>
             
             {activeSection === section.id && <AboutInfo dangerouslySetInnerHTML={{ __html: section.text }}   />}
           </div>
