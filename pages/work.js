@@ -59,7 +59,7 @@ const Work = () => {
       >
         {project.projectPhoto.map((projectPhoto)=>(
         <SwiperSlide key={projectPhoto}>
-        <Image src={"/"+projectPhoto +".png"} width={720} height={405} />
+        <Image src={"https://github.com/polinatea/portfolio/tree/main/public/"+projectPhoto +".png"} width={720} height={405} />
         </SwiperSlide>
         ))}
       </Swiper>
@@ -67,6 +67,7 @@ const Work = () => {
       </div>
       ))}
     </div>
+    
 
   )
 }
