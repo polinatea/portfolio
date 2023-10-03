@@ -59,7 +59,7 @@ const Work = () => {
       >
         {project.projectPhoto.map((projectPhoto)=>(
         <SwiperSlide key={projectPhoto}>
-        <Image src={"/public/"+projectPhoto +".png"} width={720} height={405} />
+        <Image src={"./"+projectPhoto +".png"} width={720} height={405} />
         </SwiperSlide>
         ))}
       </Swiper>
