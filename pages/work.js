@@ -60,7 +60,7 @@ const Work = () => {
         {project.projectPhoto.map((projectPhoto)=>(
         <SwiperSlide  key={projectPhoto}>
                   
-<div className='relative w-[360px] h-[202.5px] lg:w-[720px] lg:h-[405px]'><Image src={"/"+projectPhoto +".png"} fill /></div>
+<div className='relative w-[360px] h-[202.5px] lg:w-[720px] lg:h-[405px]'><Image src={"./"+projectPhoto +".png"} fill /></div>
         {/* <Image src={"/"+projectPhoto +".png"} width={720} height={405} /> */}
         
         </SwiperSlide>
