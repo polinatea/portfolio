@@ -28,8 +28,8 @@ const Work = () => {
   return (
     <div className='flex flex-col items-center pt-16 px-8 '>
       {projects.map((project) => (
-      <div key={project.id} className='h-[calc(100vh-80px)] flex flex-col lg:flex-row lg:justify-center  gap-10 '>
-        <div className='w-[360px] lg:w-[480px] flex flex-col gap-5  text-gray-700 px-5 mt-20 '>
+      <div key={project.id} className='h-[calc(100vh-80px)] flex flex-col items-center lg:flex-row lg:justify-center  gap-10 '>
+        <div className='w-[360px]  xl:w-[540px] flex flex-col gap-5  text-gray-700 px-5 mt-20 '>
           <p className='lg:text-2xl text-xl font-medium text-center'>{project.projectName}</p>
           <p className='lg:text-xl text-sm font-normal'>{project.about}</p>
          <div className='lg:text-base text-xs font-normal flex gap-2 flex-wrap'> 
@@ -60,7 +60,7 @@ const Work = () => {
         {project.projectPhoto.map((projectPhoto)=>(
         <SwiperSlide  key={projectPhoto}>
                   
-<div className='relative w-[360px] h-[202.5px] lg:w-[720px] lg:h-[405px]'><Image src={"./"+projectPhoto +".png"} fill /></div>
+<div className='relative w-[360px] h-[202.5px] md:w-[540px] md:h-[303.75px] xl:w-[720px] xl:h-[405px]'><Image src={"./"+projectPhoto +".png"} fill /></div>
         {/* <Image src={"/"+projectPhoto +".png"} width={720} height={405} /> */}
         
         </SwiperSlide>

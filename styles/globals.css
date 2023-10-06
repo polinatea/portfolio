@@ -12,10 +12,7 @@
 }
 
 
-.swiper {
-    width: 720px;
-    
-  }
+
   
   .swiper-slide {
     text-align: center;
@@ -34,21 +31,41 @@
   }
 
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1281px) {
+  .swiper {
+    width: 720px;
+    
+  }
 
+  .swiper-slide {
+    width: 720px;
 
+  }
+}
+  @media (max-width: 1280px) {
+    .swiper-slide {
+      width: 540px;
+
+    }
+    .swiper{
+      width: 540px;
+    }
+
+  }
   
   @media (max-width: 768px){
     .swiper-slide {
       width: 144px;
-      height: 81px;
-    }
-    .swiper{
-      width: 450px;
-    }
-  }
 
-  @media (max-width: 640px){
+    }
     .swiper{
       width: 360px;
     }
   }
+
+  @media (min-width: 640px){
+
+  }
+
+ 
