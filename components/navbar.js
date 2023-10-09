@@ -29,8 +29,8 @@ const Navbar = () => {
           <li onClick={() => setActive(false)} className='hover:underline underline-offset-4'>
             <Link href="/work">Work</Link>
           </li>
-          <li onClick={() => setActive(false)} className='hover:underline underline-offset-4'>
-            <Link href="/contacts">Contacts</Link>
+          <li className='hover:underline underline-offset-4'>
+          <a href="mailto:pchainikova@gmail.com">Contact</a>
           </li>
         </ul>
       </nav>

@@ -5,7 +5,7 @@ const AboutInfo = (props) => {
     // <div  className='border-2 border-zinc-100 text-xl p-5 mx-5 my-5 rounded-xl bg-stone-50'> 
     //    <div dangerouslySetInnerHTML={props.dangerouslySetInnerHTML} />
     // </div>
-    <div  className='border-2 border-gray-150 text-xl p-5 mx-5 my-5 rounded-xl bg-gray-50 text-gray-700 font-light h-fit'> 
+    <div  className='border-2 border-sky-900 text-xl p-5 mx-5 my-5 rounded-xl bg-sky-100  text-gray-700 font-medium h-fit'> 
     <div dangerouslySetInnerHTML={props.dangerouslySetInnerHTML} />
  </div>
   )

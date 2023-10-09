@@ -10,8 +10,19 @@ const About = () => {
     {
       id: 'studies',
       label: 'Studies',
-      text: `My degree is Information System and technologies. <br> <br> Degree focuses on the study of how technology can be used to manage and process information within organizations.<br> 
-      It covers a range of topics including database management, software development, cybersecurity, and data analysis. `,
+      text: `<p>I have a Bachelor's degree in Information Systems and Technologies.</p>
+      <p>The degree focused on step-by-step design and direct development of an information
+      system: </p> 
+      <ul>
+      <li style="margin-left:10px"> ● For design I learned tools such as Unified Modeling Language(UML), Figma,
+      Entity-relationship model and others
+      </li>
+      <li style="margin-left:10px">
+         ● For the information system development I learned different programming
+      languages such as Javascript, Python, SQL, PHP, C/C++/C# and used them for
+      developing applications.
+      </li>
+      </ul> `,
     },
     {
       id: 'hobby',
@@ -22,7 +33,7 @@ const About = () => {
     {
       id: 'interestingFacts',
       label: 'Interesting Facts',
-      text: 'Here are some interesting facts about me.',
+      text: 'I speak 3 languages: Russian, English and Spanish <br> I was writing poems when I was a kid <br> I don\'t like olives',
     },
   ];
   const toggleSection = (sectionId) => {
